@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌟 YourName</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header blog-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Thoughts, tutorials, and insights</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-layout">
+                
+                <!-- Main Blog Posts -->
+                <div class="blog-posts">
+                    
+                    <!-- Featured Post -->
+                    <article class="blog-card featured-post">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">📝</div>
+                            <span class="blog-category">Featured</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">📅 January 15, 2024</span>
+                                <span class="blog-read-time">⏱️ 5 min read</span>
+                            </div>
+                            <h2>Getting Started with Web Development in 2024</h2>
+                            <p>A comprehensive guide for beginners looking to start their journey in web development. Learn about the essential tools, languages, and resources you need.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <!-- Regular Posts -->
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">⚛️</div>
+                            <span class="blog-category">React</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">📅 January 10, 2024</span>
+                                <span class="blog-read-time">⏱️ 8 min read</span>
+                            </div>
+                            <h3>Understanding React Hooks: A Complete Guide</h3>
+                            <p>Deep dive into React Hooks - useState, useEffect, useContext, and custom hooks with practical examples.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">🎨</div>
+                            <span class="blog-category">CSS</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">📅 January 5, 2024</span>
+                                <span class="blog-read-time">⏱️ 6 min read</span>
+                            </div>
+                            <h3>Modern CSS Techniques You Should Know</h3>
+                            <p>Explore CSS Grid, Flexbox, custom properties, and other modern CSS features for better layouts.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">🚀</div>
+                            <span class="blog-category">Performance</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">📅 December 28, 2023</span>
+                                <span class="blog-read-time">⏱️ 10 min read</span>
+                            </div>
+                            <h3>Web Performance Optimization Tips</h3>
+                            <p>Learn how to make your website faster with these essential performance optimization techniques.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <div class="blog-placeholder">🔒</div>
+                            <span class="blog-category">Security</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">📅 December 20, 2023</span>
+                                <span class="blog-read-time">⏱️ 7 min read</span>
+                            </div>
+                            <h3>Web Security Best Practices</h3>
+                            <p>Essential security practices every web developer should follow to protect their applications.</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">Next →</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    
+                    <!-- Search -->
+                    <div class="sidebar-widget">
+                        <h3>Search</h3>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search posts...">
+                            <button>🔍</button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">JavaScript <span>(12)</span></a></li>
+                            <li><a href="#">React <span>(8)</span></a></li>
+                            <li><a href="#">CSS <span>(6)</span></a></li>
+                            <li><a href="#">Node.js <span>(5)</span></a></li>
+                            <li><a href="#">Career <span>(4)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h3>Recent Posts</h3>
+                        <ul class="recent-posts">
+                            <li>
+                                <a href="#">Getting Started with Web Development</a>
+                                <span>Jan 15, 2024</span>
+                            </li>
+                            <li>
+                                <a href="#">Understanding React Hooks</a>
+                                <span>Jan 10, 2024</span>
+                            </li>
+                            <li>
+                                <a href="#">Modern CSS Techniques</a>
+                                <span>Jan 5, 2024</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="sidebar-widget newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to get the latest posts directly in your inbox!</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YourName</h3>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YourName. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
