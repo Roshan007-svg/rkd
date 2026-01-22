@@ -3,95 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">MyWebsite</div>
+        <a href="index.html" class="logo">🌟 YourName</a>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Hello, I'm <span>Your Name</span></h1>
-            <p>Welcome to my personal website</p>
-            <a href="#contact" class="btn">Get In Touch</a>
+            <p class="hero-subtitle">Welcome to my website</p>
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="hero-description">
+                I'm a passionate developer / designer / creator who loves 
+                building amazing digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-primary">View My Work</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">👨‍💻</div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- Featured Section -->
+    <section class="section featured">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm passionate about creating amazing things. 
-                       Write something about yourself here.</p>
-                    <p>Add your skills, interests, or anything you want 
-                       visitors to know about you.</p>
+            <h2 class="section-title">What I Do</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful and user-friendly website designs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Development</h3>
+                    <p>Building responsive and functional web applications</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile First</h3>
+                    <p>Designing for all devices and screen sizes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Performance</h3>
+                    <p>Optimizing for speed and best user experience</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-light">
+    <!-- Recent Projects Preview -->
+    <section class="section projects-preview bg-light">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-icon">🎨</div>
-                    <h3>Project One</h3>
-                    <p>Description of your first project</p>
+                    <div class="project-image">🖼️</div>
+                    <div class="project-info">
+                        <h3>Project One</h3>
+                        <p>A brief description of this project</p>
+                        <a href="projects.html" class="link">Learn More →</a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon">💻</div>
-                    <h3>Project Two</h3>
-                    <p>Description of your second project</p>
+                    <div class="project-image">🎯</div>
+                    <div class="project-info">
+                        <h3>Project Two</h3>
+                        <p>A brief description of this project</p>
+                        <a href="projects.html" class="link">Learn More →</a>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-icon">🚀</div>
-                    <h3>Project Three</h3>
-                    <p>Description of your third project</p>
+                    <div class="project-image">⚡</div>
+                    <div class="project-info">
+                        <h3>Project Three</h3>
+                        <p>A brief description of this project</p>
+                        <a href="projects.html" class="link">Learn More →</a>
+                    </div>
                 </div>
+            </div>
+            <div class="text-center">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <!-- CTA Section -->
+    <section class="section cta">
         <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-content">
-                <p>Feel free to reach out!</p>
-                <div class="contact-links">
-                    <a href="mailto:your@email.com" class="contact-btn">
-                        📧 Email Me
-                    </a>
-                    <a href="https://github.com/yourusername" class="contact-btn">
-                        💻 GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" class="contact-btn">
-                        💼 LinkedIn
-                    </a>
-                </div>
-            </div>
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind? Let's create something amazing!</p>
+            <a href="contact.html" class="btn btn-white">Get In Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YourName</h3>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YourName. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
