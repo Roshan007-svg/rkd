@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">🌟 YourName</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header projects-header">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>A showcase of my recent work and side projects</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="projects-showcase">
+                
+                <!-- Project 1 -->
+                <div class="project-showcase-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">🛒</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">Web Application</span>
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online store with cart, checkout, and payment integration.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-showcase-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">📊</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">Dashboard</span>
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization dashboard with interactive charts.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-showcase-card" data-category="mobile">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">📱</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">App Store</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">Mobile App</span>
+                        <h3>Fitness Tracker</h3>
+                        <p>Mobile app for tracking workouts, nutrition, and health goals.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Redux</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-showcase-card" data-category="design">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">🎨</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Design</a>
+                            <a href="#" class="project-link">Figma</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">UI/UX Design</span>
+                        <h3>Banking App Redesign</h3>
+                        <p>Complete UI/UX redesign for a modern banking application.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Prototyping</span>
+                            <span>User Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-showcase-card" data-category="web">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">✍️</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">CMS</span>
+                        <h3>Blog Platform</h3>
+                        <p>Custom blogging platform with markdown support and SEO optimization.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Tailwind</span>
+                            <span>Prisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-showcase-card" data-category="design">
+                    <div class="project-image-wrapper">
+                        <div class="project-placeholder">🏢</div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Live</a>
+                            <a href="#" class="project-link">Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-category">Website</span>
+                        <h3>Corporate Website</h3>
+                        <p>Modern corporate website with animations and contact integration.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's work together to bring your ideas to life!</p>
+            <a href="contact.html" class="btn btn-white">Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YourName</h3>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 YourName. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
